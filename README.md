@@ -13,6 +13,8 @@ This project configures an **ESP32** as a smart plant monitor that reads moistur
 ### **Prerequisites**
 
 * **ESP-IDF** (v4.x or later) installed and configured.
+    * Recommend using Shawn Hymle docker config for simplicity
+        https://shawnhymel.com/2872/esp32-getting-started-with-esp-idf/?utm_source=youtube&utm_medium=video&utm_campaign=esp32_iot_course_evergreen
 * A **Discord bot token** (obtained from the Discord Developer Portal).
 * A Wi-Fi network connection.
 * An ADC moisture sensor (or equivalent analog input) connected to **GPIO 36** on an **ESP-32**.
@@ -36,7 +38,12 @@ The Discord API is provided by the \`esp-discord\` component. You must add this 
     ```
 
 3.  **Run the component installer:**
-    The ESP-IDF build system will automatically fetch this component when you run \`idf.py build\` or \`idf.py menuconfig\`.
+    The ESP-IDF build system will automatically fetch this component when you run \`idf.py set-target <your_esp_modle_here>\`. This will start the downloading of any dependencies.
+    ***Note***: This step **should fail** and we will address this in the next setp 
+
+5. **Config Discord Dependencie Script**
+    The Managed Components directory should now be available and we need to allow exectution of `certgen.sh`
+    Run `chmod +x managed_components/abobija__esp-discord/certgen.sh`
 
 ---
 
