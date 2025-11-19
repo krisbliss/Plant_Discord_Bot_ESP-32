@@ -1,5 +1,5 @@
 # Plant_Discord_Bot_ESP-32
-Embedded system project developed utilizing ESP-IDF and leverageing FreeRTOS for event-driven architecture to provide real-time plant moisture monitoring and asynchronous (humorus) alerts via Discord.
+Embedded systems developed with ESP-IDF to create and an event-driven application to provide real-time plant moisture monitoring and asynchronous send alerts via Discord. Please keep in mind that the alerts are intened to be funny so please do not be alarmed if your plants sound very upset with you. You are more than welcome to change the possible alerts in the `/main/include/random_responses.h`
 
 
 ## 🪴 ESP32 Plant Bot Configuration Guide
