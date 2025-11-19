@@ -1,0 +1,5 @@
+echo.ai.c
+sdkconfig
+*.old
+/managed_components
+/build

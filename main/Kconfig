@@ -1,0 +1,24 @@
+config MY_APP_OPENAI_API_KEY
+    string "OpenAI API Key"
+    default ""
+    help
+        Enter your secret API key for OpenAI.
+        You can find this on your OpenAI account dashboard.
+        Example: "sk-..."
+
+config DISCORD_CHANNEL_ID
+    string "Discord Channel ID"
+    default ""
+    help
+        Enter the unique ID for the Discord channel you want to target.
+        To get this, enable Developer Mode in Discord, then right-click
+        the channel and select "Copy Channel ID".
+
+config ADC_THRESHOLD_VAL
+    int "Raw ADC value for sensor threshold"
+    range 10 2500
+    default 1900
+    help
+        Set the integer threshold value for the Analog-to-Digital Converter (ADC).
+        This value should be within the range of 10 to 2500.
+        It is typically used to trigger an action when the ADC reading crosses this level.
