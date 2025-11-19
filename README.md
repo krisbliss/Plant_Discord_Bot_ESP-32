@@ -64,8 +64,8 @@ All configuration is handled using the ESP-IDF **\`menuconfig\`** system.
     * **Set `CONFIG_ADC_THRESHOLD_VAL`:** Enter the **Analog Reading Threshold** (e.g., \`1900\`). Readings **above** this value are considered **DRY** (needs water); readings below are **WET**.
 
 5. **Change Partition Table size**
-   * Navigate to: **Partition Table**
-   * **Set `Single factory app, no OTA ` to `Single factory app` (large), no OTA.
+   * Navigate to: **Partition Table** $\rightarrow$ **Single factory app, no OTA**
+   * **Set** `Single factory app, no OTA ` to `Single factory app` (large), no OTA.
      
 6.  **Save and Exit:** Select **<Save>** and then **<Exit>** to save your configuration to \`sdkconfig\`.
 
